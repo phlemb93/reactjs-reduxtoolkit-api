@@ -9,7 +9,7 @@ function App() {
   return (
  
     <>
-      <h2>My Restaurant</h2>
+      <h2>My Users List</h2>
       {/* <Cake />
       <Burger /> */}
       <NavBar />
