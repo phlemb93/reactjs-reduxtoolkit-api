@@ -1,13 +1,18 @@
+// import { useState } from "react"
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect } from 'react' 
 import { fetchUsers } from "./userSlice"
 
 
-export const User = ({ searchValue }) => {
+export const User = () => {
 
     const users = useSelector(state => state.user)
+    const searchValue = useSelector(state => state.search.value)
+
     const dispatch = useDispatch()
-        
+    
+    console.log(searchValue)
+    
     useEffect(() => {
         dispatch(fetchUsers())
     }, [])
